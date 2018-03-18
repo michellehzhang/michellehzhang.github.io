@@ -46,7 +46,8 @@ body {
 <p align="center"> 
     <a id="plsgod" href="/Dinner/Unhealthy/Fast" class="button button1">Generate!</a>
    
-</p>
+    
+    </p>
 
 <body onload="myFunction()">
 <script>
@@ -54,9 +55,12 @@ function myFunction() {
     var rand = Math.random();
 if (rand>0 && rand<0.50) {
     document.getElementById("plsgod").href = "/Dinner/Unhealthy/Fast/Recipe";
-} else 
+} else {
     document.getElementById("plsgod").href = "/Dinner/Unhealthy/Fast/Recipee";
+}
+}
 </script>
+</p>
 
 
 </body>
