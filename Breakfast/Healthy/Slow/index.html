@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: #d2b6f6;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 20px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 370px;
+    font-size: 45px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius:12px
+
+   
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #ac76f2;
+}
+
+
+.button1:hover {
+    background-color: #ac76f2;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+</style>
+</head>
+<body>
+
+
+<h2 align="center" style="font-size:350%; font-family: palatino;">Am I Ready For My Recipe?</h2>
+<p align="center"> 
+    <a id="plsgod" href="/Breakfast/Healthy/Slow" class="button button1">Generate!</a>
+   
+</p>
+
+<body onload="myFunction()">
+<script>
+function myFunction() {
+    var rand = Math.random();
+if (rand>0 && rand<0.33) {
+    document.getElementById("plsgod").href = "/Breakfast/Healthy/Slow/Recipe";
+} else if (rand>0.33 && rand<0.67) {
+    document.getElementById("plsgod").href = "/Breakfast/Healthy/Slow/Recipee";
+} else {
+    document.getElementById("plsgod").href = "/Breakfast/Healthy/Slow/Recipeee";
+}
+}
+</script>
+
+
+
+</body>
+</html>
